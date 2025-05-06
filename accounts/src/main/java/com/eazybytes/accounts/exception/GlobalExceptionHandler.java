@@ -1,4 +1,4 @@
-package com.eazybytes.accounts.exceptions;
+package com.eazybytes.accounts.exception;
 
 import com.eazybytes.accounts.dto.ErrorResponseDto;
 import org.springframework.http.HttpHeaders;

@@ -15,7 +15,7 @@ import static lombok.AccessLevel.PRIVATE;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = PRIVATE)
-public class Accounts {
+public class Accounts extends BaseEntity {
     @Column(name = "customer_id")
     Long customerId;
 
