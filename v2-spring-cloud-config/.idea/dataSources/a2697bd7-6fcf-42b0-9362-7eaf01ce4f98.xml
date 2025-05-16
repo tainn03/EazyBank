@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="accountsdb@localhost">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.52">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.53">
     <root id="1">
       <DefaultCasing>exact</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -1117,43 +1117,43 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="300" parent="298" name="customer_id">
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="301" parent="298" name="account_number">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="302" parent="298" name="account_type">
-      <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="303" parent="298" name="branch_address">
-      <DasType>varchar(200)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>varchar(200)|0s</StoredType>
     </column>
     <column id="304" parent="298" name="created_at">
-      <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
+      <StoredType>date|0s</StoredType>
     </column>
     <column id="305" parent="298" name="created_by">
-      <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
+      <StoredType>varchar(20)|0s</StoredType>
     </column>
     <column id="306" parent="298" name="updated_at">
-      <DasType>date|0s</DasType>
       <Position>7</Position>
+      <StoredType>date|0s</StoredType>
     </column>
     <column id="307" parent="298" name="updated_by">
-      <DasType>varchar(20)|0s</DasType>
       <Position>8</Position>
+      <StoredType>varchar(20)|0s</StoredType>
     </column>
     <index id="308" parent="298" name="PRIMARY">
       <ColNames>account_number</ColNames>
@@ -1167,42 +1167,42 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="310" parent="299" name="customer_id">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="311" parent="299" name="name">
-      <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="312" parent="299" name="email">
-      <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="313" parent="299" name="mobile_number">
-      <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>varchar(20)|0s</StoredType>
     </column>
     <column id="314" parent="299" name="created_at">
-      <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
+      <StoredType>date|0s</StoredType>
     </column>
     <column id="315" parent="299" name="created_by">
-      <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
+      <StoredType>varchar(20)|0s</StoredType>
     </column>
     <column id="316" parent="299" name="updated_at">
-      <DasType>date|0s</DasType>
       <Position>7</Position>
+      <StoredType>date|0s</StoredType>
     </column>
     <column id="317" parent="299" name="updated_by">
-      <DasType>varchar(20)|0s</DasType>
       <Position>8</Position>
+      <StoredType>varchar(20)|0s</StoredType>
     </column>
     <index id="318" parent="299" name="PRIMARY">
       <ColNames>customer_id</ColNames>

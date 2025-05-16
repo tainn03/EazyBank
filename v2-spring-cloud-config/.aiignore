@@ -1,0 +1,86 @@
+# AI Assistant ignore file
+
+# Build artifacts
+target/
+build/
+out/
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+.factorypath
+
+# Logs and temporary files
+logs/
+*.log
+*.tmp
+*.temp
+*.swp
+*~
+
+# Maven specific
+.mvn/
+mvnw
+mvnw.cmd
+
+# Docker related
+.docker/
+
+# Generated code
+generated/
+.generated/
+
+# Large binary files
+*.bin
+*.dat
+*.zip
+*.tar.gz
+*.tgz
+
+# Database files
+*.db
+*.sqlite
+*.h2.db
+
+# Test data and reports
+surefire-reports/
+test-output/
+jacoco.exec
+
+# Spring Boot specific
+.spring.boot.properties
+.spring.boot.pid
+
+# Configuration that might contain sensitive information
+**/application-*.yml
+**/application-*.properties
+**/bootstrap-*.yml
+**/bootstrap-*.properties
+**/secrets/
+
+# Documentation and non-code files (optional, depending on your needs)
+# *.md
+# *.txt
+# *.pdf
+# *.doc
+# *.docx
+
+# Version control
+.git/
+.gitignore
+.gitattributes
+
+# Node.js (if used for frontend)
+node_modules/
+package-lock.json
+yarn.lock

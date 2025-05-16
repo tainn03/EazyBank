@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb0d3e3d-a9d3-461c-a853-a8180a07eaca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.aiignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.junie/guidelines.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/eazybytes/gatewayserver/filters/FilterUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/eazybytes/gatewayserver/filters/RequestTraceFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/eazybytes/gatewayserver/filters/ResponseTraceFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.vscode/settings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Microservices.postman_collection.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../accounts/.gitattributes" beforeDir="false" />
@@ -91,53 +97,77 @@
       <change beforePath="$PROJECT_DIR$/../loans/src/main/resources/application_qa.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../loans/src/main/resources/schema.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../loans/src/test/java/com/eazybytes/loans/LoansApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts-qa.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/cards-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/cards-qa.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/cards.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-qa.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/loans.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/AccountsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/CardsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/CardsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/CustomerDetailsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/CustomerDetailsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/LoansDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/LoansDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/mapper/CustomerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/service/ICustomersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/service/ICustomersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/service/client/CardsFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/service/client/CardsFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/service/client/LoansFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/service/client/LoansFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/service/impl/CustomersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/service/impl/CustomersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/prod/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/common-config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/qa/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/qa/common-config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "tainn03"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tainn03&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/tainn03/EazyBank.git",
-    "accountId": "d1199d46-b45e-4b65-bf14-f1c55f7cecd7"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/tainn03/EazyBank.git&quot;,
+    &quot;accountId&quot;: &quot;d1199d46-b45e-4b65-bf14-f1c55f7cecd7&quot;
   }
-}]]></component>
+}</component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2wzP2MtDg2UciCiH7SqfmU7kTqU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
@@ -151,23 +181,33 @@
     "HTTP Request.AccountsApplication | #1.executor": "Run",
     "HTTP Request.AccountsApplication | #2.executor": "Run",
     "Maven.accounts [clean].executor": "Run",
+    "Maven.accounts [install].executor": "Run",
     "Maven.configserver [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.AccountsApplication.executor": "Debug",
     "Spring Boot.CardsApplication.executor": "Debug",
     "Spring Boot.ConfigserverApplication.executor": "Debug",
+    "Spring Boot.EurekaserverApplication.executor": "Debug",
+    "Spring Boot.GatewayserverApplication.executor": "Debug",
     "Spring Boot.LoansApplication.executor": "Debug",
+    "code.cleanup.on.save": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/workspace/MSA/v2-spring-cloud-config/docker-compose/qa",
+    "last_opened_file_path": "D:/workspace/MSA/v2-spring-cloud-config/gatewayserver/src/main/resources",
+    "llm.McpServerEditPanel.switcher": "1",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true"
+    "rearrange.code.on.save": "true",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -175,6 +215,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\MSA\v2-spring-cloud-config\gatewayserver\src\main\resources" />
       <recent name="D:\workspace\MSA\v2-spring-cloud-config\docker-compose\qa" />
       <recent name="D:\workspace\MSA\v2-spring-cloud-config\docker-compose\prod" />
       <recent name="D:\workspace\MSA\v2-spring-cloud-config\configserver\src\main\resources\config" />
@@ -182,8 +223,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\workspace\MSA\v2-spring-cloud-config\docker-compose\default" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.eazybytes.accounts.dto" />
+    </key>
   </component>
-  <component name="RunManager" selected="Docker.default.cardsdb: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.GatewayserverApplication">
     <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
@@ -218,6 +262,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EurekaserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="eurekaserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.eurekaserver.EurekaserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="gatewayserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.gatewayserver.GatewayserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoansApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="loans" />
@@ -227,7 +286,9 @@
       </method>
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="default.accountsdb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -271,19 +332,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.default.cardsdb: Compose Deployment" />
-        <item itemvalue="Docker.default.loansdb: Compose Deployment" />
-        <item itemvalue="Docker.default.accountsdb: Compose Deployment" />
-        <item itemvalue="Spring Boot.CardsApplication" />
         <item itemvalue="Spring Boot.AccountsApplication" />
+        <item itemvalue="Spring Boot.CardsApplication" />
+        <item itemvalue="Docker.default.loansdb: Compose Deployment" />
+        <item itemvalue="Docker.default.cardsdb: Compose Deployment" />
+        <item itemvalue="Docker.default.accountsdb: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19416.15" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19416.15" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
       </set>
     </attachedChunks>
   </component>
@@ -295,12 +355,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747041221008</updated>
-      <workItem from="1747041222113" duration="28577000" />
+      <workItem from="1747041222113" duration="31458000" />
+      <workItem from="1747303942197" duration="1351000" />
+      <workItem from="1747306003839" duration="26000" />
+      <workItem from="1747308492406" duration="6456000" />
+      <workItem from="1747378099160" duration="292000" />
+      <workItem from="1747378442880" duration="1598000" />
+      <workItem from="1747380092023" duration="1187000" />
+      <workItem from="1747381371186" duration="11999000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/v2_spring_cloud_config$AccountsApplication.ic" NAME="AccountsApplication Coverage Results" MODIFIED="1747042685628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
