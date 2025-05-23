@@ -32,6 +32,12 @@ call mvn clean package jib:dockerBuild -DskipTests
 if %errorlevel% neq 0 goto error
 
 echo.
+echo Building message...
+cd /d d:\workspace\MSA\v2-spring-cloud-config\message
+call mvn clean package jib:dockerBuild -DskipTests
+if %errorlevel% neq 0 goto error
+
+echo.
 echo Building gatewayserver...
 cd /d d:\workspace\MSA\v2-spring-cloud-config\gatewayserver
 call mvn clean package jib:dockerBuild -DskipTests

@@ -86,7 +86,7 @@
                 <version>3.4.2</version>
                 <configuration>
                     <to>
-                        <image>tann0308/${project.artifactId}:s12</image>
+                        <image>tann0308/${project.artifactId}:s13</image>
                     </to>
                 </configuration>
             </plugin>
